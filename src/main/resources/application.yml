@@ -1,0 +1,18 @@
+server:
+  port: 8888
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///C:/Users/vgraz/IdeaProjects/configserver/
+          search-paths: .
+  application:
+    name: spring-cloud-config
+
+
+logging:
+  level:
+    org.springframework.cloud.config: DEBUG
+    org.eclipse.jgit: DEBUG
